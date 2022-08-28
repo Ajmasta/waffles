@@ -1,0 +1,155 @@
+
+.mainContainer{
+    max-height:500px;
+    width:300px;
+    background: linear-gradient(180deg, #000000 87.5%, #724724 100%);
+    display:flex;
+    flex-direction:column;
+    border-radius: 10px;
+ 
+    z-index:2;
+    
+}
+.imageContainer{
+    width:300px;
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    border-radius:5px;
+}
+.contentContainer{
+  
+    width:250px;
+    height:150px;
+}
+.nameText{
+    color:#ffffff;
+    width:250px;
+    font-size:14px
+}
+.filler{
+    background-color: transparent;
+    width:300px;
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.syrupContainer{
+    position:absolute;
+    bottom:-115px;
+    z-index:-1;
+
+}
+.allContainer{
+ 
+ margin-right:10px;
+    position:relative;
+}
+.raffleButton{
+    background-color:#DA7D17;
+    width: 103px;
+    height:33px;
+    border-radius:5px;
+    border:none;
+    color:#000000;
+    font-size:14px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.raffleButton:hover{
+    cursor:pointer;
+    background-color:#ae6b23;
+}
+.cancelButton{
+    background-color:#e6e0db;
+    width: 103px;
+    height:33px;
+    border-radius:5px;
+    border:none;
+    color:#000000;
+    font-size:14px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cancelButton:hover{
+    cursor:pointer;
+    background-color:#666666;
+}
+
+.buttonContainer{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    z-index:1;
+}
+.buttonsContainer{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+    z-index:1;
+}
+.inputText{
+    margin:0;
+    color:#ffffff;
+    font-size:14px;
+}
+.inputContainer{
+    width:300px;
+    
+    text-align: center;
+    z-index:10;
+}
+.ticketButton{
+    background-color:#DA7D17;
+    border:none;
+    border-radius:2px;
+}
+.activeTicketButton{
+    color:#000000;
+    background-color:#ffa201;
+    border:none;
+    border-radius:2px;
+    border:2px solid #ffffff;
+}
+.ticketButton:hover{
+cursor:pointer;
+background-color:#ae6b23;
+}
+.profitText{
+    color:#ffffff;
+    margin:0;
+    font-size:12px;
+}
+.errorContainer{
+    position:absolute;
+    color:#ec2004;
+    bottom:-30px;
+   left:20px;
+  border-radius:5px;
+  padding:5px;
+    background-color: #eeeeee;
+    text-align:center;
+}
+.allContainer{
+    position:relative;
+    height:500px;
+    z-index:2;
+    margin-bottom:100px;
+    margin-top: 20px;
+}
+.notifText{
+    color:#ffffff;
+
+}
