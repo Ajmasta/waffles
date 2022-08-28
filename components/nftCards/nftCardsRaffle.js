@@ -63,7 +63,7 @@ const NFTCardsRaffle = ({ nft, contract }) => {
 
       const active = await contract.raffleInProgress();
 
-      setActiveRaffle(false);
+      setActiveRaffle(active);
       console.log("NFT", nft);
       setAlreadyRaffled(nftFormatted.raffled);
       const time = new Date();
