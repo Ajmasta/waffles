@@ -5,7 +5,7 @@ Waffle is a NFT raffle platform powered by chainlink. It allows anyone to raffle
 
 ## Smart contract
 
-You can find the code of the smart contract here: 
+You can find the code of the smart contract here: https://github.com/Ajmasta/waffleContract
 
 
 
