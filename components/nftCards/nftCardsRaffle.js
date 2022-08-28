@@ -63,7 +63,7 @@ const NFTCardsRaffle = ({ nft, contract }) => {
 
       const active = await contract.raffleInProgress();
 
-      setActiveRaffle(active);
+      setActiveRaffle(false);
       console.log("NFT", nft);
       setAlreadyRaffled(nftFormatted.raffled);
       const time = new Date();
@@ -152,8 +152,8 @@ const NFTCardsRaffle = ({ nft, contract }) => {
             <div className={styles.buttonContainer}>
               {!pastDeadline ? (
                 <p className={styles.notifText}>Not Past deadline yet!</p>
-              ) : alreadyRaffled ? (
-                nftFormatted.winnerId.toNumber() !== 0 ? (
+              ) : nftFormatted.raffleId.toNumber() === 0 ? (
+                nftFormatted.raffleId.toNumber() === 0 ? (
                   <button className={styles.raffleButton} onClick={sendPrizes}>
                     Claim Prizes
                   </button>
