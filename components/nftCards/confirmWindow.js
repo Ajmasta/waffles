@@ -124,11 +124,11 @@ const ConfirmWindow = ({ setConfirmWindow, nft }) => {
         <div className={styles.topContainer}>
           <div className={styles.imageContainer}>
             {nft.image_url ? (
-              <img
+              <Image
                 src={nft?.image_url}
                 alt="nft image"
                 width={300}
-                maxheight={300}
+                height={300}
               />
             ) : (
               <div className={styles.filler}>
@@ -143,7 +143,7 @@ const ConfirmWindow = ({ setConfirmWindow, nft }) => {
             <p className={styles.raffleText}>
               {raffleParams.price}{" "}
               <span className={styles.ethLogoContainer}>
-                <Image src={ethLogo} width={15} height={15} />
+                <Image src={ethLogo} width={15} height={15} alt="waffle logo" />
               </span>
               per Ticket
             </p>
@@ -156,7 +156,7 @@ const ConfirmWindow = ({ setConfirmWindow, nft }) => {
               {" "}
               Max profit: {raffleParams.price * raffleParams.number}
               <span className={styles.ethLogoContainer}>
-                <Image src={ethLogo} width={15} height={15} />
+                <Image src={ethLogo} width={15} height={15} alt="waffle logo" />
               </span>
             </p>
           </div>
@@ -174,7 +174,7 @@ const ConfirmWindow = ({ setConfirmWindow, nft }) => {
           <p className={styles.steps}> 2. Verify Raffle parameters</p>
           <p className={styles.steps}>3. Submit raffle</p>
           <button onClick={() => startRaffle()} className={styles.button}>
-            Let's get some waffles!
+            {"Let's get some waffles!"}
           </button>
         </div>
       </div>

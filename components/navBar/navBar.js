@@ -54,21 +54,21 @@ const NavBar = () => {
 
   return (
     <div className={styles.mainContainer}>
-      <Link href="/app/homescreen">
+      <Link href="/dapp/homescreen">
         <div className={styles.logoContainer}>
           <Image src={waffle} alt="nft image" width={60} height={60} />
         </div>
       </Link>
       <div className={styles.textContainer}>
-        <Link href="/app/tickets">
+        <Link href="/dapp/tickets">
           <p className={styles.text}>Your Tickets</p>
         </Link>
-        <Link href="/app/yourraffles">
+        <Link href="/dapp/yourraffles">
           <p className={styles.text}>Your Raffles</p>
         </Link>
 
         {wallet ? (
-          <Link href={`/app/${wallet}`}>
+          <Link href={`/dapp/${wallet}`}>
             <p className={styles.text}>{wallet.slice(0, 5)}...</p>
           </Link>
         ) : (

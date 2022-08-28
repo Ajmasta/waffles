@@ -16,10 +16,6 @@ const Wallet = ({ data }) => {
     const getNfts = async () => {
       const options = {
         method: "GET",
-        /* headers: {
-          Accept: "application/json",
-          "X-API-KEY": "cea51c7103bf4028a899174652d52464",
-        },*/ // for mainnet only
       };
 
       const data = await (

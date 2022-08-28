@@ -17,7 +17,7 @@ const FirstPanel = () => {
       </div>
       <div className={styles.contentContainer}>
         <div className={styles.logoContainer}>
-          <Image src={waffle} width={"260"} height={"260"} />
+          <Image src={waffle} width={"260"} height={"260"} alt="waffle logo" />
         </div>
         <div className={styles.textContainer}>
           <p className={styles.mainTitle}>Waffle</p>
@@ -27,7 +27,7 @@ const FirstPanel = () => {
           <p className={styles.tiertiaryTitle}>Powered by Chainlink</p>
         </div>
         <div className={styles.buttonContainer}>
-          <Link href="/app/homescreen/">
+          <Link href="/dapp/homescreen/">
             <button className={styles.launchButton}>Launch App</button>
           </Link>
           <button className={styles.learnButton}>Learn more</button>

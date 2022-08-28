@@ -82,16 +82,16 @@ const NFTCardsBuy = ({ nft, contract, i }) => {
           <div className={styles.mainContainer}>
             <div className={styles.imageContainer}>
               {nftFormatted.image_url ? (
-                <img
+                <Image
                   src={nftFormatted?.image_url}
                   alt="nft image"
                   width={300}
-                  maxheight={300}
+                  height={300}
                 />
               ) : (
                 <div className={styles.filler}>
                   <Image src={waffle} alt="nft image" width={150} />
-                  <p className={styles.nameText}> Can't load image</p>
+                  <p className={styles.nameText}> {"Can't load image"}</p>
                 </div>
               )}
             </div>
@@ -103,7 +103,7 @@ const NFTCardsBuy = ({ nft, contract, i }) => {
                   ) : (
                     <>
                       <button onClick={() => getNft()}>Refresh data</button>{" "}
-                      Can't fetch collection
+                      {"Can't fetch collection"}
                     </>
                   )}
                 </p>
@@ -145,7 +145,7 @@ const NFTCardsBuy = ({ nft, contract, i }) => {
             {error ? <p className={styles.errorContainer}>{error}</p> : ""}
           </div>
           <div className={styles.syrupContainer}>
-            <Image src={syrup1} width={300} height={150} />
+            <Image src={syrup1} width={300} height={150} alt="waffle logo" />
           </div>
         </div>
       ) : (

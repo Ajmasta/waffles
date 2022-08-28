@@ -47,7 +47,7 @@ const NFTCards = ({ nft, setConfirmWindow, confirmWindow, setSelectedNFT }) => {
             ) : (
               <div className={styles.filler}>
                 <Image src={waffle} alt="nft image" width={150} />
-                <p className={styles.nameText}> Can't load image</p>
+                <p className={styles.nameText}>{"Can't load image"} </p>
               </div>
             )}
           </div>
