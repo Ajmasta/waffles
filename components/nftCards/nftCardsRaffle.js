@@ -152,8 +152,8 @@ const NFTCardsRaffle = ({ nft, contract }) => {
             <div className={styles.buttonContainer}>
               {!pastDeadline ? (
                 <p className={styles.notifText}>Not Past deadline yet!</p>
-              ) : nftFormatted.raffleId.toNumber() === 0 ? (
-                nftFormatted.raffleId.toNumber() === 0 ? (
+              ) : alreadyRaffled ? (
+                nftFormatted.winnerId.toNumber() !== 0 ? (
                   <button className={styles.raffleButton} onClick={sendPrizes}>
                     Claim Prizes
                   </button>
